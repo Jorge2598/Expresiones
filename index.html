@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Expresiones Regulares</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <div class="principal">
+            <div class="wrap">
+                <form class="formulario" action="">
+                    <h2>Expresiones Regulares</h2>
+                    <div class="mb-3 ">
+                        <input type="text" class="form-control" id="expre" placeholder=" Escriba la expresion regular" value="^[A-Z][\d]{3}([a-z]{3})([\W]{3})$">
+                        <div class="d-grid gap-2 col-3 mx-auto">
+                            <button class="btn  btn-outline-light" type="button"  onclick="reiniciarExp()">reiniciar expresion</button>
+                        </div>
+                    </div>
+                      <div class="mb-3">
+                        <input type="text" class="form-control" id="valorexpre" placeholder="Ingresa la Expresion" required>
+                        <div class="d-grid gap-2 col-3 mx-auto">
+                            <button class="btn  btn-outline-light" class="boton" type="button" id="btn-validar" onclick="validar()">Confirmar</button>
+                        </div>
+                      </div>                    
+                </form>
+            </div>
+        </div>
+        <div class="resul">
+            <textarea class="resultado" id="mosresul"></textarea>
+        </div>
+        <ul>
+            <li>JORGE ELIECER FERNANDEZ BARRERA </li>
+            <li>MARCELA VILORIA HERNANDEZ </li>
+            <li>MOISES IDARRAGA LEMUS</li>
+            <li>ANDRES CAMILO MENDOZA</li>
+        </ul>
+    </body>
+    <script src="expre.js"></script>
+</html>
